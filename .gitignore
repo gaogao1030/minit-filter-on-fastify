@@ -1,3 +1,5 @@
+# Compress
+*.tar.gz
 # Logs
 logs
 *.log

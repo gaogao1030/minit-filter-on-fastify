@@ -45,4 +45,4 @@ wait
 
 ssh -i $IdRsaPath $TargetHost "cd $ParentDir; rm -rf $DirName; mkdir $DirName"
 ssh -i $IdRsaPath $TargetHost "cd $ParentDir; tar -xvf $CompressedAppName -C $SrcDir"
-ssh -i $IdRsaPath $TargetHost "cd $SrcDir; npm install; pm2 delete $AppName; pm2 start ecosystem.config.js"
+ssh -i $IdRsaPath $TargetHost "cd $SrcDir; npm install; pm2 startOrRestart ecosystem.config.js"
